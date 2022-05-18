@@ -18,7 +18,7 @@ public class Enviroment {
 
 	public String getAppUrl() throws FileNotFoundException {
 		String baseDir = System.getProperty("user.dir");// Current user directory made
-		System.out.println("Base DIR:" + baseDir);
+	//	System.out.println("Base DIR:" + baseDir);
 		FileInputStream fis = new FileInputStream(baseDir + "/src/main/resources/environment.properties");
 		Properties prop = new Properties();
 		// how to read properties

@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import com.reresonance.config.BaseTest;
 import com.reresonance.keywods.UIKeywords;
-import com.reresonance.pages.HomePage;
+//import com.reresonance.pages.HomePage;
 import com.reresonance.util.PropertiesFile;
 
 public class RegressionTests extends BaseTest {
@@ -32,8 +32,8 @@ public class RegressionTests extends BaseTest {
 		
 	//	HomePage home = new HomePage();
 		
-		HomePage home = PageFactory.initElements(keyword.driver, HomePage.class);// Page object modul
-		home.clickOnAssigment();
+//		HomePage home = PageFactory.initElements(keyword.driver, HomePage.class);// Page object modul
+//		home.clickOnAssigment();
 		
 	//	UIKeywords.click(repo.confirmationAlertLocator()); 
     //     HomePage home =new HomePage(); 

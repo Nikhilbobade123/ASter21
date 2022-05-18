@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.reresonance.regression.RegressionTests">
+      <class name="com.reresonance.regression.RegressionTesttwo">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="verifyConformationAlertISOpened"/>
+          <include name="verifyConfoirmationAlertIsOpened"/>
         </methods>
-      </class> <!-- com.reresonance.regression.RegressionTests -->
+      </class> <!-- com.reresonance.regression.RegressionTesttwo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

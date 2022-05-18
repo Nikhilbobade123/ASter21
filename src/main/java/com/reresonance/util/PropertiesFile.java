@@ -7,7 +7,7 @@ import java.util.Properties;
 
 public class PropertiesFile {
 	public String getValue(String filePath, String key) {
-	String baseDir=	System.getProperty("app_url"); 
+	String baseDir=	System.getProperty("user.dir"); 
 	String value ="";
 		try {
 			FileInputStream fis = new FileInputStream(baseDir+filePath);

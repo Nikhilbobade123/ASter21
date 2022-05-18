@@ -5,7 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -26,7 +25,7 @@ public class UIKeywords {
 			driver = new FirefoxDriver();
 
 		} else {
-			System.err.println("Invalid browser name");
+			System.err.println("Invalid browser name:"+browserName);
 
 		}
 	}
@@ -73,26 +72,25 @@ public class UIKeywords {
 	}
 
 	public static void click(String locator) {
-	//	driver.findElement(By.cssSelector(locator)).click();
+		driver.findElement(By.cssSelector(locator)).click();
 	
-
-		String locatorType =locator.split("##")[0];
-		System.out.println("Locator:"+locator);
-		String locatorValue =locator.split("##")[1];
-		switch (locatorType) {
-		case "XPATH":
-			driver.findElement(By.xpath(locatorValue)).click();
-			break;
-			case "CSS":
-				driver.findElement(By.cssSelector(locatorValue)).click();
-		break;
-			case "ID":
-				driver.findElement(By.id(locatorValue)).click();
-				break;
-		default:
-			System.out.println("invalid locator type: "+locatorType);
-			break;
-	}
+	//	String locatorType =locator.split("##")[0];
+	//	System.out.println("Locator:"+locator);
+	//	String locatorValue =locator.split("##")[1];
+	//	switch (locatorType) {
+	//	case "XPATH":
+	//		driver.findElement(By.xpath(locatorValue)).click();
+	//		break;
+	//		case "CSS":
+	//			driver.findElement(By.cssSelector(locatorValue)).click();
+	//	break;
+	//		case "ID":
+	//			driver.findElement(By.id(locatorValue)).click();
+	//			break;
+	//	default:
+	//		System.out.println("invalid locator type: "+locatorType);
+	//		break;
+//	}
 
 }
 

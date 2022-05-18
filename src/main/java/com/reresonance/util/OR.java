@@ -4,10 +4,10 @@ public class OR {
 	String filePath = "/src/main/resources/OR.properties";
     PropertiesFile prop = new PropertiesFile();
 
-	public String getassignmentsLocator() {
-         PropertiesFile prop=new PropertiesFile();
+	public String assignmentsLocator() {
+       //  PropertiesFile prop=new PropertiesFile();
           return prop.getValue(filePath,"assignments");
-	
+	     
 	}
 	public String confirmationAlertLocator() {
 		
