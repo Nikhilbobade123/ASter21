@@ -12,7 +12,7 @@ public class HomePageTest {
 	public void verifyTitleOfThehomePage() {
 		HomePageThreeObject home =new HomePageThreeObject();
 	   String title=home.getTitle();
-     	Assert.assertEquals("HomePage",title,"title didnt match");
+     	Assert.assertEquals("Home Page",title,"title didnt match");
 	
 	}
 
