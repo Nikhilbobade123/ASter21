@@ -25,5 +25,8 @@ public class HomePageThreeObject {
 	public void clickOnAssigments() {
          assignmentsLnk.click();
 	}
+	public String getTitle() {
+	return	keywords.driver.getTitle();
+	}
 
 }
