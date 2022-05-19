@@ -15,7 +15,7 @@ public class RegressionTest {
 		// WebDriverManager.chromedriver().setup();
 		// RemoteWebDriver driver =new ChromeDriver();
 		UIKeywords.openBrowser("chrome");
-		UIKeywords.lonchUrl("https://testingshastra.com/");
+		UIKeywords.launchUrl("https://testingshastra.com/");
 		// driver.get("");
 		// String actualTitle =driver.getTitle();
 		String actualTitle = UIKeywords.getTitle();

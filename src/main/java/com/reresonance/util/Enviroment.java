@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-import javax.imageio.stream.FileImageInputStream;
+//import javax.imageio.stream.FileImageInputStream;
 
 public class Enviroment {
 	/**
