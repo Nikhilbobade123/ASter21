@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 import com.resonance.pagse.HomePageThreeObject;
 
-import junit.framework.Assert;
+import junit.framework.Assert; 
 
 public class HomePageTest {
 	 @Test

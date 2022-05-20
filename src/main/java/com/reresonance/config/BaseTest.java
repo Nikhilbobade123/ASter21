@@ -1,6 +1,5 @@
 package com.reresonance.config;
 
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import com.reresonance.keywods.UIKeywords;
@@ -14,11 +13,11 @@ public class BaseTest {
 	@BeforeMethod
 	public void setUp() throws Exception {
 		UIKeywords.openBrowser("chrome");
-		UIKeywords.lonchUrl(env.getAppUrl());
+		UIKeywords.launchUrl(env.getAppUrl());
 
 	}
 
-	@AfterMethod
+//	@AfterMethod
 	public void tearDown() throws Exception {
 		UIKeywords.quitBrowser();
 

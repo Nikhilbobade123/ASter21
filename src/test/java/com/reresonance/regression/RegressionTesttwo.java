@@ -1,6 +1,7 @@
 package com.reresonance.regression;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -16,12 +17,12 @@ public class RegressionTesttwo  extends BaseTest {
         WebElement element =null;
 }
 	@Test
-	public void verifyConfoirmationAlertIsOpened() {
+	public void verifyConfoirmationAlertIsOpened() throws IOException {
 		PropertiesFile prop = new PropertiesFile();
 		
-    	 String assignments=prop.getValue("/src/main/resources/OR.properties","assignment");
-		UIKeywords.click(assignments);
-	    String confAlert=prop.getValue("/src/main/resources/OR.properties","confirmation-alert");
+    	 String assignments1=prop.getValue("\\src\\main\\resources\\OR.properties","assignments");
+		UIKeywords.click(assignments1);
+	    String confAlert=prop.getValue("\\src\\main\\resources\\OR.properties","confirmation-alert");
 		UIKeywords.click(confAlert);
 	}
 

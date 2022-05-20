@@ -30,7 +30,7 @@ public class UIKeywords {
 		}
 	}
 
-	public static void lonchUrl(String url) {
+	public static void launchUrl(String url) {
 		driver.get(url);
 		System.out.println("Url is lonch");
 	}
@@ -70,33 +70,41 @@ public class UIKeywords {
 		System.out.println("Browser windows quit");
 
 	}
+	public  static void closeBrowser() {
+        driver.close();
+        System.out.println("close browser");
+	}
+
+//	public static void click(String locator) {
+//driver.findElement(By.xpath(locator)).click();		
+	
 
 	public static void click(String locator) {
 		driver.findElement(By.cssSelector(locator)).click();
-	
-	//	String locatorType =locator.split("##")[0];
-	//	System.out.println("Locator:"+locator);
-	//	String locatorValue =locator.split("##")[1];
-	//	switch (locatorType) {
-	//	case "XPATH":
-	//		driver.findElement(By.xpath(locatorValue)).click();
-	//		break;
-	//		case "CSS":
-	//			driver.findElement(By.cssSelector(locatorValue)).click();
-	//	break;
-	//		case "ID":
-	//			driver.findElement(By.id(locatorValue)).click();
-	//			break;
-	//	default:
-	//		System.out.println("invalid locator type: "+locatorType);
-	//		break;
-//	}
-
+	driver.findElement(By.cssSelector(locator)).click();
+		String locatorType =locator.split("##")[0];
+		System.out.println("Locator:"+locator);
+		String locatorValue =locator.split("##")[1];
+		switch (locatorType) {
+		case "XPATH":
+			driver.findElement(By.xpath(locatorValue)).click();
+			break;
+			case "CSS":
+				driver.findElement(By.cssSelector(locatorValue)).click();
+		break;
+			case "ID":
+				driver.findElement(By.id(locatorValue)).click();
+				break;
+		default:
+			System.out.println("invalid locator type: "+locatorType);
+		break;
+	}
+	}
 }
 
 //	public static String gitTitle() {
 //		// TODO Auto-generated method stub
 //		return null;
-	}
+//	}
 
 

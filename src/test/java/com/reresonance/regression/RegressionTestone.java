@@ -13,7 +13,7 @@ public class RegressionTestone {
 	@Test
 	public void verifyTitleOfHomePage() throws FileNotFoundException {
         UIKeywords.openBrowser("chrome");
-        UIKeywords.lonchUrl(env.getAppUrl());
+        UIKeywords.launchUrl(env.getAppUrl());
         
         String actualTitle = UIKeywords.getTitle();
         WebElement element =null;
