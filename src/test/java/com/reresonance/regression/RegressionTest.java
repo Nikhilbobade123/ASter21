@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 
 import com.reresonance.keywods.UIKeywords;
 
-import junit.framework.Assert;
 
 @Test
 

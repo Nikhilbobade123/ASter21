@@ -1,10 +1,10 @@
 package com.reresonance.regression;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.resonance.pagse.HomePageThreeObject;
 
-import junit.framework.Assert; 
 
 public class HomePageTest {
 	 @Test
