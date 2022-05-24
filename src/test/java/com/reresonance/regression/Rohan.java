@@ -5,6 +5,7 @@ public class Rohan {
 		System.out.println("hello");
 		String s ="Nikhil Bobade";
 		System.out.println(s);
+		s.split(" ");
 	}
 
 }
